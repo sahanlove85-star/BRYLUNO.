@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BRYLUNO System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>BRYLUNO Premium Orders</h1>
+
+<div class="card">
+<h2>Place Order</h2>
+
+<input type="text" id="resellerID" placeholder="Reseller ID" required>
+<input type="text" id="customer" placeholder="Customer Name" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<select id="tier">
+<option value="Basic">Basic</option>
+<option value="Premium">Premium</option>
+<option value="Luxury">Luxury</option>
+</select>
+
+<input type="file" id="productImage">
+
+<button onclick="placeOrder()">Submit Order</button>
+
+<p id="result"></p>
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
